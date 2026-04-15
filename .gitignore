@@ -6,7 +6,9 @@ dist/
 build/
 .eggs/
 *.pdf
-output.*
+output.xlsx
+output.csv
+output.json
 .env
 .venv/
 venv/
