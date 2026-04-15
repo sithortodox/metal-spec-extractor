@@ -1,0 +1,22 @@
+[project]
+name = "metal-spec-extractor"
+version = "0.1.0"
+description = "Извлечение спецификаций металлопроката из PDF в структурированный формат (Excel/CSV/JSON)"
+requires-python = ">=3.10"
+dependencies = [
+    "pdfplumber>=0.10.0",
+    "openpyxl>=3.1.0",
+    "pandas>=2.0.0",
+    "click>=8.1.0",
+]
+
+[project.scripts]
+metal-spec = "src.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
